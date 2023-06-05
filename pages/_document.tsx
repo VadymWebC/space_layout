@@ -12,6 +12,62 @@ export default function Document() {
                     type="font/otf"
                     crossOrigin=""
                 />
+                <Link
+                    rel="preload"
+                    href="/fonts/MazzardH-Medium.woff2"
+                    as="font"
+                    type="font/woff2"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/MazzardH-Regular.woff2"
+                    as="font"
+                    type="font/woff2"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/Move-X-Bold.otf"
+                    as="font"
+                    type="font/otf"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/NeueMachina-Bold.woff2"
+                    as="font"
+                    type="font/woff2"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/NeueMachina-Medium.woff2"
+                    as="font"
+                    type="font/woff2"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/NeueMachina-Regular.woff2"
+                    as="font"
+                    type="font/woff2"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/TTOctosquares-Medium.otf"
+                    as="font"
+                    type="font/otf"
+                    crossOrigin=""
+                />
+                <Link
+                    rel="preload"
+                    href="/fonts/TTOctosquares-Regular.otf"
+                    as="font"
+                    type="font/otf"
+                    crossOrigin=""
+                />
             </Head>
             <body>
                 sdfsdf
