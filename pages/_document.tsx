@@ -70,7 +70,6 @@ export default function Document() {
                 />
             </Head>
             <body>
-                sdfsdf
                 <Main />
                 <NextScript />
             </body>
