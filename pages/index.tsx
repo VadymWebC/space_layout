@@ -2,6 +2,10 @@ import styles from '../styles/home.module.scss'
 import cl from 'classnames'
 
 import { Logo } from '../components/Logo'
+import { SocialNetworks } from '../components/SocialNetworks'
+import { Button } from '../components/Button'
+import { Navigation } from '../components/Navigation'
+import { Title } from '../components/Title'
 
 export default function Home() {
     return (
@@ -9,29 +13,23 @@ export default function Home() {
             <section className={cl(styles.section, styles.sectionMain)}>
                 <header>
                     <Logo />
-                    {/*
-                        <SocialNetworks />
+                    <SocialNetworks />
                     <Button onClick={() => {}}>Whitepaper</Button>
-*/}
                 </header>
 
-                {/*    <Navigation /> */}
+                <Navigation />
 
-                {/*
-                    <div>
-                        <Title type="h2">From dusk to dawn</Title>
-                        <ul>
-                            <li>
-                                <Button onClick={() => {}}>Mint</Button>
-                            </li>
-                            <li>
-                                <Button onClick={() => {}}>
-                                    Connect Wallet
-                                </Button>
-                            </li>
-                        </ul>
-                    </div>
-                    */}
+                <div>
+                    <Title type="h2">From dusk to dawn</Title>
+                    <ul>
+                        <li>
+                            <Button onClick={() => {}}>Mint</Button>
+                        </li>
+                        <li>
+                            <Button onClick={() => {}}>Connect Wallet</Button>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
     )
