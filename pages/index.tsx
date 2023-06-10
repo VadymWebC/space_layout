@@ -20,7 +20,7 @@ export default function Home() {
                 <Navigation />
 
                 <div>
-                    <Title type="h2">From dusk to dawn</Title>
+                    <Title>From dusk to dawn</Title>
                     <ul>
                         <li>
                             <Button onClick={() => {}}>Mint</Button>
