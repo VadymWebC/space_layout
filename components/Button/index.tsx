@@ -8,15 +8,9 @@ interface ButtonProps {
 }
 
 export const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
-    return <button onClick={onClick}>{children}</button>
+    return (
+        <button className={styles.button} onClick={onClick}>
+            {children}
+        </button>
+    )
 }
-
-// interface ButtonProps {}
-
-// export const Button: React.FC<ButtonProps> = () => {
-//     return (
-//         <div>
-//             <span></span>
-//         </div>
-//     )
-// }
