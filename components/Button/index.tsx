@@ -11,32 +11,14 @@ export const Button: React.FC<ButtonProps> = ({ onClick, children }) => {
     return (
         <button className={styles.button} onClick={onClick}>
             <span className={styles.buttonText}>{children}</span>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 35.83 59"
-                className={styles.buttonBorderLeft}
-            >
+            <svg viewBox="0 0 31.96 55.75" className={styles.buttonBorderLeft}>
                 <path
                     className={styles.buttonLine}
-                    d="M36,56.75h-2.19s-8-4.5-8-4.5H5.04V7.75h30.95"
+                    d="M31.95,54.75h-2.19s-8-4.5-8-4.5H1V5.75H31.95"
                 />
                 <path
                     className={styles.buttonArrow}
-                    d="M17.92,11.53l-9.5,9V11.53h9.5Z"
-                />
-            </svg>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 39.92 59"
-                className={styles.buttonBorderRight}
-            >
-                <path
-                    className={styles.buttonLine}
-                    d="M.42,7.76h1.63L10.55,2.26h24.71V56.76H.13"
-                />
-                <path
-                    className={styles.buttonArrow}
-                    d="M22.42,53.76l9.5-9v9h-9.5Z"
+                    d="M4,8.83s1.23,0,12.22,0L4,20.54s0-11.71,0-11.71Z"
                 />
             </svg>
         </button>
