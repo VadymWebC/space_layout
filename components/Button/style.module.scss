@@ -21,6 +21,11 @@
             fill: white;
             stroke: black;
         }
+
+        .buttonBorderCenter {
+            border-color: black transparent;
+            background: white;
+        }
     }
 
     &Border {
@@ -38,6 +43,19 @@
             right: 0;
             top: 0;
             height: 4rem;
+        }
+
+        &Center {
+            position: absolute;
+            z-index: 0;
+            top: 0.334rem;
+            left: 2.2857rem;
+            right: 2.2857rem;
+            height: 3.5rem;
+            border-color: white transparent;
+            border-width: 2.5px 0;
+            border-style: solid;
+            transition: all 0.3s;
         }
     }
 
