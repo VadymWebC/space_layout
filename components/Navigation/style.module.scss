@@ -1,0 +1,10 @@
+.navigation {
+    &Link {
+        color: white;
+
+        &:hover,
+        &:visited {
+            color: white;
+        }
+    }
+}

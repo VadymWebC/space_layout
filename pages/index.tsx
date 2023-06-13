@@ -17,7 +17,7 @@ export default function Home() {
                     <Button onClick={() => {}}>Whitepaper</Button>
                 </header>
 
-                {/*<Navigation />*/}
+                <Navigation />
 
                 <div>
                     <Title>From dusk to&nbsp;dawn</Title>
