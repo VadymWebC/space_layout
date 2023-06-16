@@ -3,7 +3,10 @@ import cl from 'classnames'
 
 import { Logo } from '../components/Logo'
 import { SocialNetworks } from '../components/SocialNetworks'
-import { Button } from '../components/Button'
+import { ArtButton } from '../components/ArtButton'
+import { ButtonSVG } from '../components/ButtonSVG'
+import { ButtonSVG2 } from '../components/ButtonSVG2'
+import { ButtonSVG3 } from '../components/ButtonSVG3'
 import { Navigation } from '../components/Navigation'
 import { Title } from '../components/Title'
 
@@ -14,7 +17,7 @@ export default function Home() {
                 <header className={styles.header}>
                     <Logo />
                     <SocialNetworks />
-                    <Button onClick={() => {}}>Whitepaper</Button>
+                    <ArtButton onClick={() => {}}>Whitepaper</ArtButton>
                 </header>
 
                 <Navigation />
@@ -23,11 +26,11 @@ export default function Home() {
                     <Title>From dusk to&nbsp;dawn</Title>
                     <ul className={styles.buttonList}>
                         <li>
-                            <Button onClick={() => {}}>Mint</Button>
+                            <ButtonSVG2 onClick={() => {}}>Mint</ButtonSVG2>
                         </li>
-                        <li>
-                            <Button onClick={() => {}}>Connect Wallet</Button>
-                        </li>
+                        <ButtonSVG2 onClick={() => {}}>
+                            Connect Wallet
+                        </ButtonSVG2>
                     </ul>
                 </div>
             </section>
