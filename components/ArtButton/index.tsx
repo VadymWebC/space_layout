@@ -1,23 +1,19 @@
-import Link from 'next/link';
-import { ReactNode } from 'react';
+import Link from 'next/link'
+import { ReactNode } from 'react'
 
-import styles from './style.module.scss';
+import styles from './style.module.scss'
 
 interface ArtButtonProps {
-    onClick: () => void;
-    children: ReactNode;
+    onClick: () => void
+    children: ReactNode
 }
 
-export const ArtButton: React.FC<ArtButtonProps> = ({
-    onClick,
-    children,
-}) => {
+export const ArtButton: React.FC<ArtButtonProps> = ({ onClick, children }) => {
     return (
-        <button
-            className={styles.artButton}
-            onClick={onClick}
-        >
+        <button className={styles.artButton} onClick={onClick}>
             <span className={styles.artButtonText}>{children}</span>
+            <span className={styles.artButtonAngleLeft} />
+            <span className={styles.artButtonAngleRight} />
         </button>
-    );
+    )
 }
