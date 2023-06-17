@@ -8,7 +8,7 @@ export type TypeArtButton = 'BluePurple' | 'GreenYellow' | 'Blue' | 'YellowPink'
 interface ArtButtonProps {
     onClick: () => void
     children: ReactNode
-    className: string
+    className?: string
     type?: TypeArtButton
 }
 
