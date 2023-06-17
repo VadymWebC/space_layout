@@ -1,15 +1,14 @@
-import Image from 'next/image';
+import Image from 'next/image'
 
-import { ArtButton } from '../ArtButton';
+import { ArtButton } from '../ArtButton'
 
-import styles from './style.module.scss';
+import styles from './style.module.scss'
 
 interface CardMoreProps {
-    src: string;
-    description: string;
-    onClick: () => void;
+    src: string
+    description: string
+    onClick: () => void
 }
-
 
 export const CardMore: React.FC<CardMoreProps> = ({
     src,
@@ -18,19 +17,16 @@ export const CardMore: React.FC<CardMoreProps> = ({
 }) => {
     return (
         <div className={styles.cardMore}>
-            <ArtButton
-                onClick={onClick}
-                className={styles.cardMoreButton}
-            >
+            <ArtButton onClick={onClick} className={styles.cardMoreButton}>
                 More
             </ArtButton>
             <Image
-              src={src}
-              alt={description}
-              className={styles.cardMoreImage}
-              width="271"
-              height="184"
+                src={src}
+                alt={description}
+                className={styles.cardMoreImage}
+                width="271"
+                height="184"
             />
         </div>
-    );
+    )
 }
