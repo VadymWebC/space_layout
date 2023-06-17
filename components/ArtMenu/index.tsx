@@ -1,11 +1,10 @@
 import Link from 'next/link'
-import cl from 'classnames'
-
+import { useState } from 'react'
 import styles from './style.module.scss'
 
-interface ArtMenuProps {}
+import { ArtMenuItem } from './ArtMenuItem'
 
-import { CardMore } from '../CardMore'
+interface ArtMenuProps {}
 
 const links = [
     {
@@ -13,7 +12,7 @@ const links = [
         href: '/',
         title: 'Blighted Badlands',
         image: '/images/blighted_badlands.jpg',
-        active: true,
+        active: false,
     },
     {
         id: 2,
@@ -39,28 +38,20 @@ const links = [
 ]
 
 export const ArtMenu: React.FC<ArtMenuProps> = () => {
+    const [openedId, setOpenedId] = useState(0)
+
     return (
         <div className={styles.artMenu}>
-            Fagot
             {links.map((link) => (
-                <Link
-                    href={link.href}
+                <ArtMenuItem
                     key={link.id}
                     onClick={(event) => {
                         event.preventDefault()
+                        setOpenedId(link.id !== openedId ? link.id : 0)
                     }}
-                    className={cl(
-                        styles.navigationLink,
-                        link.active && styles.navigationLinkActive
-                    )}
-                >
-                    {link.title}
-                    <CardMore
-                        src={link.image}
-                        description={link.title}
-                        onClick={() => {}}
-                    />
-                </Link>
+                    isOpened={link.id === openedId}
+                    {...link}
+                />
             ))}
         </div>
     )
